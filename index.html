@@ -1,114 +1,322 @@
-<!DOCTYPE HTML>
-<!--
-	Stagfires by Bob Harvey
--->
+
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Stagfires</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<head>
 
-		  ga('create', 'UA-88791592-1', 'auto');
-		  ga('send', 'pageview');
+    <title>Stagfires</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-		</script>
-	</head>
-	<body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      ga('create', 'UA-88791592-1', 'auto');
+      ga('send', 'pageview');
 
-				<!-- Header -->
-					<header id="header">
-						<span class="avatar"><img src="images/avatar-stag-173-178.jpg" alt="Harv" /></span>
-						<h1>Welcome to <strong>Stag Fire Installations</strong>.</h1>
-						<h2>Multi fuel fire and chimney installations.</h2>
+    </script>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
 
-						<h3>Please follow us on Facebook to have a look at our latest work.</h3>
-						<h3>You can call or text on <a href="tel:+447887473487">07887 473 487</a> or message us on Facebook to get in touch.</h3>
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-						<h3>Thomas Harvey</h3>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/Stagfires/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-							<!-- <li><a href="https://www.instagram.com/stagfire/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li> -->
-							<!-- <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li> -->
-						</ul>
-					</header>
+}
+.bgimg-1 {
+  background-image: url("images/bg-wood-bw-3000-2000.jpg");
+  min-height: 100%;
+}
 
-					<section id="logos">
-					<div class="row">
-							<img src="images/welshflag-150-100.jpg" alt="" />
-						</div>	
-						<div class="row">
-							<img src="images/hetas-215-100.jpg" alt="" />
-						</div>	
+.bgimg-1.bottom {
+  background-image: url("images/bg-wood-bw-3000-2000.jpg");
+  padding-top: 140px;
+  min-height: 600px;
+}
 
-					</section>
+.bgimg-2 {
+  background-image: url("images/bg-calm-fire.png");
+  min-height: 400px;
+}
 
-				<!-- Main -->
-					<section id="main">
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
 
-						<!-- Thumbnails -->
-							<section class="thumbnails">
-								<div>
-									<a href="images/fulls/stag01.jpg">
-										<img src="images/thumbs/stag01-thumb.jpg" alt="" />
-										<!-- <h3>Lorem ipsum dolor sit amet</h3> -->
-									</a>
-									<a href="images/fulls/stag02.jpg">
-										<img src="images/thumbs/stag02-thumb.jpg" alt="" />
-										<!-- <h3>Lorem ipsum dolor sit amet</h3> -->
-									</a>
-									<a href="images/fulls/stag05.jpg">
-										<img src="images/thumbs/stag05-thumb.jpg" alt="" />
-										<!-- <h3>Lorem ipsum dolor sit amet</h3> -->
-									</a>
-								</div>
-								<div>
-									<a href="images/fulls/stag04.jpg">
-										<img src="images/thumbs/stag04-thumb.jpg" alt="" />
-										<!-- <h3>Lorem ipsum dolor sit amet</h3> -->
-									</a>	
-									<a href="images/fulls/stag03.jpg">
-										<img src="images/thumbs/stag03-thumb.jpg" alt="" />
-										<!-- <h3>Lorem ipsum dolor sit amet</h3> -->
-									</a>
-								</div>
-								<div>
-									<a href="images/fulls/stag11.jpg">
-										<img src="images/thumbs/stag11-thumb.jpg" alt="" />
-										<!-- <h3>Lorem ipsum dolor sit amet</h3> -->
-									</a>
-									<a href="images/fulls/stag07.jpg">
-										<img src="images/thumbs/stag07-thumb.jpg" alt="" />
-										<!-- <h3>Lorem ipsum dolor sit amet</h3> -->
-									</a>
-									<a href="images/fulls/stag06.jpg">
-										<img src="images/thumbs/stag06-thumb.jpg" alt="" />
-										<!-- <h3>Lorem ipsum dolor sit amet</h3> -->
-									</a>
-								</div>
-							</section>
+.caption {
+  left: 0;
+  padding-top: 80px;
+  width: 100%;
+  text-align: center;
+  min-height: 100%;
+}
 
-					</section>
+.bottom .caption {
+  padding-top: 0px;
+}
 
-				<!-- Footer -->
-					<footer id="footer">
-						
-					</footer>
+.caption div.border {
+  /*padding-top: 60px;*/
+  background-color: #000;
+  opacity: 0.70;
+  padding: 18px;
+  font-size: 24px;
+  width: 80%;
+  margin: 0 auto;
+}
 
-			</div>
+.thumbnails .photo {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #777;
+}
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+    #header .avatar {
+      border-radius: 100%;
+      display: inline-block;
+      margin: 0 0 2em 0;
+      padding: 1em;
+      border: solid 1px rgba(255, 255, 255, 0.25);
+      background-color: rgba(255, 255, 255, 0.075);
+    }
+
+      #header .avatar img {
+        border-radius: 100%;
+        display: block;
+        width: 10em;
+      }
+
+      a {
+        transition: color 0.5s ease;
+        color: #FF6600;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: inherit;
+      }
+
+      .icons a:hover {
+        text-decoration: none;
+      }
+
+
+h3 {
+    color: #777;
+    font-weight: 200;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+  .icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+  }
+
+
+    .icon:before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none !important;
+    }
+
+    .icon > .label {
+      display: none;
+    }
+
+    .icon.style2 {
+      -moz-transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      border-radius: 100%;
+      display: inline-block;
+      padding: 0.5em;
+      border: solid 1px rgba(255, 255, 255, 0.25);
+      background-color: rgba(255, 255, 255, 0.075);
+    }
+
+      .icon.style2:before {
+        display: block;
+        width: 1.25em;
+        height: 1.25em;
+        line-height: 1.25em;
+        font-size: 1.35em;
+      }
+
+      .icon.style2:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+
+        .icon.style2 a:hover {
+            text-decoration: underline;
+          }
+
+
+      @media screen and (max-width: 736px) {
+
+        .icon.style2:before {
+          font-size: 1em;
+        }
+
+      }
+
+    ol, ul {
+    list-style: none;
+    margin: 0 auto;
+        -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+  }
+
+  body, input, select, textarea {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: "Handel Gothic BT", Helvetica, sans-serif;
+    font-size: 13pt;
+    font-weight: 200;
+    line-height: 1.65;
+  }
+
+  img.photo {
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px;
+  }
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+</head>
+<body>
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar" style="font-size:2em;">
+    <span class="w3-bar-item w3-right"><a href="tel:+447887473487"><i class="fa fa-phone-square" aria-hidden="true"></i></a></span>
+    <span class="w3-bar-item w3-right"><a href="https://www.facebook.com/Stagfires/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <div id="header">
+        <span style="margin-top:60px;" class="avatar"><img src="images/avatar-stag-173-178.jpg" alt="Harv" /></span>
+      </div>
+
+    <div class="border" style="margin-top:60px;">
+      
+      <h1>Stag Fire Installations</h1>
+
+      
+    </div>
+      <ul class="" style="margin-top: 60px;">
+          <li><a href="#welcome" class="icon fa-chevron-down"><span class="label">Down</span></a></li>
+        </ul>
+  </div>
+</div>
+
+<div id="welcome" style="position:relative;">
+  <div style="background-color:#000;text-align:center;padding:50px 80px;">
+
+<h1>Welcome to <strong>Stag Fire Installations</strong></h1>
+      <h2>Multi fuel fire and chimney installations</h2>
+
+    <h3>Please follow us on Facebook to have a look at our latest work.</h3>
+      <h3>You can call or text on <a href="tel:+447887473487">07887 473 487</a> or message us on Facebook to get in touch.</h3>
+
+      <h3>Thomas Harvey</h3>
+      <ul class="icons">
+        <li><a style="font-size: 2.5em;"href="tel:+447887473487"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <!-- <li><a href="https://www.instagram.com/stagfire/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li> -->
+        <!-- <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li> -->
+      </ul>
+  </div>
+</div>
+
+<div class="bgimg-2">
+
+</div>
+
+<div id="gallery" class="bgimg-1 bottom">
+  <div class="caption" style="color:#fff;">
+
+    <div class="border" style="margin-bottom: 70px;">
+      
+      <h1>Installations</h1>
+
+      
+    </div>
+
+    <section class="thumbnails" style="padding-bottom: 200px;"">
+                <div>
+                  <a href="images/fulls/stag01.jpg" >
+                    <img class="photo" style="margin-bottom: 20px;"src="images/thumbs/stag01-thumb.jpg" alt="" />
+                    <!-- <h3>Lorem ipsum dolor sit amet</h3> -->
+                  </a>
+                  <a href="images/fulls/stag02.jpg">
+                    <img class="photo" style="margin-bottom: 20px;"src="images/thumbs/stag02-thumb.jpg" alt="" />
+                    <!-- <h3>Lorem ipsum dolor sit amet</h3> -->
+                  </a>
+                  <a href="images/fulls/stag05.jpg">
+                    <img class="photo" style="margin-bottom: 20px;"src="images/thumbs/stag05-thumb.jpg" alt="" />
+                    <!-- <h3>Lorem ipsum dolor sit amet</h3> -->
+                  </a>
+                </div>
+                <div>
+                  <a href="images/fulls/stag04.jpg">
+                    <img class="photo" style="margin-bottom: 20px;"src="images/thumbs/stag04-thumb.jpg" alt="" />
+                    <!-- <h3>Lorem ipsum dolor sit amet</h3> -->
+                  </a>  
+                  <a href="images/fulls/stag03.jpg">
+                    <img class="photo" style="margin-bottom: 20px;"src="images/thumbs/stag03-thumb.jpg" alt="" />
+                    <!-- <h3>Lorem ipsum dolor sit amet</h3> -->
+                  </a>
+                  <a href="images/fulls/stag11.jpg">
+                    <img class="photo" style="margin-bottom: 20px;"src="images/thumbs/stag11-thumb.jpg" alt="" />
+                    <!-- <h3>Lorem ipsum dolor sit amet</h3> -->
+                  </a>
+                </div>
+              </section>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:80px 0 0 0;text-align: justify;">
+      <div class="caption" style="padding-top:0;margin-bottom:42px;">
+        <section id="logos">
+            <div class="row">
+              <img src="images/hetas-215-100.jpg" alt="" />
+            </div>  
+
+          </section>
+  </div>
+  <div class="w3-bar" style="font-size:0.8em;">
+    <span class="w3-bar-item w3-right">Stag Fire Installations <i class="fa fa-copyright" aria-hidden="true"></i></span>
+  </div>
+  </div>
+</div>
+
+
+
+
+</body>
 </html>
